@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="port.css">
+    <script src="https://kit.fontawesome.com/0253fbe725.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="" class="logo">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contect</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Frontend Devoloper</p>
+            <h1>Hi, I'm <span>Jaydeep choudhary</span></h1> 
+        </div>
+    </div>
+</div>    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="WhatsApp Image 2024-01-30 at 23.53.27_a5214c41.jpg" alt="my Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>Welcome to my digital realm, where lines of code converge to create seamless and visually stunning user interfaces.
+                         I'm  Jaydeep Choudhary, a passionate frontend developer dedicated to bringing ideas to life through the art of coding.
+                          Dive into my portfolio, where innovation meets functionality, and witness the journey of turning concepts into captivating online experiences.
+                           Let's build the future of the web together.</p>
+                 <div class="tab-title">
+                     <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                     <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                     <p class="tab-links" onclick="opentab('Education')">Education</p>
+                      </div>
+                      <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                            <li><span>Web Devlopment</span><br>Web app Devlopment</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>2022 -Current </span><br>Google Dsc Management team member</li>
+                            <li><span>25Dec - 25Jan 2024</span><br>Internship at barin vision technology</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 2025 </span><br>Pursuing Enginnering at Trinity Acedemy of Enginnering</li>
+                            <li><span>2019 - 2020</span><br>12th from A.S.D.B.Dada wala jr. college</li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!------services-------->
+<div id="Services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Devlopment</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quibusdam explicabo suscipit architecto facere dolore illum eos molestiae exercitationem? Sunt laboriosam cupiditate hic aliquid quaerat eius numquam rerum dolorum fugiat.</p>
+                <a href="">Learn more</a>
+            </div> 
+            <div>
+                <i class="fa-brands fa-figma"></i>
+                <h2>UI/UX</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quibusdam explicabo suscipit architecto facere dolore illum eos molestiae exercitationem? Sunt laboriosam cupiditate hic aliquid quaerat eius numquam rerum dolorum fugiat.</p>
+                <a href="">Learn more</a>
+            </div>
+        </div>
+         
+    </div>
+</div>
+<!---contect------------------------------------------>
+<div id="contect">
+    <div class="container">
+        <div class="row">
+            <div class="contect-left">
+                <h1 class="sub-title">Contect Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>jaydeep7749@gamil.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +91 8766622831</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/jaydeep7749"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jaydeep-choudhary-502b3224b/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Jaydeep's Resume (2).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contect-right"></div>
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© Copyright Reserved To Jaydeep. <br>Design And Developed By Jaydeep Choudhary</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontents of tabcontents){
+            tabcontents.classlist.remove("active-tab");
+        }
+    }
+
+</script>
+</body>
+</html>
